@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel and Tourism Survey</title>
+</head>
+<link rel="stylesheet" href="TOUR.css">
+
+    
+  <center><h1>Travel and Tourism Survey</h1></center>
+
+  <p>
+    Thank you for participating in 
+    our travel and tourism survey. 
+    Your feedback will help us 
+    enhance your travel experiences
+    This survey will only take a few 
+    minutes to complete.</p>
+
+  <form action="/submit-survey" method="post">
+    <section>
+      <h2>Personal Information</h2>
+
+      <label for="name">Name (Optional)</label>
+      <input type="text" name="name" id="name">
+
+      <br><br><label for="age">Age</label>
+      <select name="age" id="age">
+        <option value="under-18">Under 18</option>
+        <option value="18-24">18-24</option>
+        <option value="25-34">25-34</option>
+        <option value="35-44">35-44</option>
+        <option value="45-54">45-54</option>
+        <option value="55-64">55-64</option>
+        <option value="65+">65+</option>
+      </select>
+<br><br>
+      <label for="gender">Gender</label>
+      <input type="radio" name="gender" id="gender-male" value="male"> Male
+      <input type="radio" name="gender" id="gender-female" value="female"> Female
+      <input type="radio" name="gender" id="gender-non-binary" value="non-binary"> Non-binary
+      <input type="radio" name="gender" id="gender-prefer-not-to-say" value="prefer-not-to-say"> Prefer not to say
+      <input type="radio" name="gender" id="gender-other" value="other"> Other (please specify)
+      <input type="text" name="gender-other-text" id="gender-other-text" placeholder="Please specify">
+    </section>
+
+    <section>
+      <h2>Travel Preferences</h2>
+
+      <label for="travel-frequency">1. How often do you travel for leisure in a year?</label></section></form><br/>
+      <select name="travel-frequency" id="travel-frequency">
+        <option value="rarely">Rarely (once or less)</option>
+        <option value="occasionally">Occasionally (2-4 times)</option>
+        <option value="frequently">Frequently (5-10 times)</option>
+        <option value="very-frequently">Very frequently (more than 10 times)</option>
+      </select>
+<br><br>
+      <label for="travel-types">2. What types of travel do you prefer? (Select all that apply)</label><br><br>
+      <input type="checkbox" name="travel-types[]" id="travel-type-adventure" value="adventure"> Adventure travel
+      <input type="checkbox" name="travel-types[]" id="travel-type-beach" value="beach"> Beach vacations
+      <input type="checkbox" name="travel-types[]" id="travel-type-city" value="city"> City breaks
+      <input type="checkbox" name="travel-types[]" id="travel-type-cultural" value="cultural"> Cultural and historical trips
+      <input type="checkbox" name="travel-types[]" id="travel-type-nature" value="nature"> Nature and wildlife exploration
+      <input type="checkbox" name="travel-types[]" id="travel-type-cruise" value="cruise"> Cruise vacations
+      <input type="checkbox" name="travel-types[]" id="travel-type-other" value="other"> Other (please specify)
+      <input type="text" name="travel-types-other-text" id="travel-types-other-text" placeholder="Please specify">
+    </section>
+<section>
+    <h2>Feedback On destination</h2>
+    <label for="Feedback"><h6>1. </h6>What was the most memorable experience or attraction you visited during your recent travels?
+    </label>
+    
+    <input type="text" name="feedback" id="travel-types-other-text" placeholder="Please specify"><br>
+
+
+</label>
+<form action="/submit-feedback" method="post">
+    <label for="product-name"> <h6>2. </h6>How likely are you to recommend your most recent travel destination to a friend or family member?</label>
+    <input type="hidden" name="product-name" id="product-name">
+  
+    
+      <input type="radio" name="rating" value="1" id="star-1">
+      <label for="star-1">Very likely</label>
+  
+      <input type="radio" name="rating" value="2" id="star-2">
+      <label for="star-2">likely</label>
+  
+      <input type="radio" name="rating" value="3" id="star-3">
+      <label for="star-3">Nautral</label>
+  
+      <input type="radio" name="rating" value="4" id="star-4">
+      <label for="star-4">Unlike</label>
+  
+      <input type="radio" name="rating" value="5" id="star-5">
+      <label for="star-5">Very Unlikely</label>
+    </div>
+  <center><br><input type="submit"  value="Submit feedback"  ></center>
+    
+  </form>
+  
